@@ -15,7 +15,7 @@ A full-stack Netflix clone built with modern technologies, including **React.js*
 - **Custom Recommendations**: AI-driven personalized recommendations based on user behavior.
 - **Tailwind CSS**: Utility-first CSS framework for styling.
 
-### Backend (Laravel)(https://github.com/AliAlYaman/Netflix-Backend.git)
+### [Backend (Laravel)](https://github.com/AliAlYaman/Netflix-Backend.git)
 - **RESTful API**: Robust API for frontend-backend communication.
 - **User Management**: Secure authentication and authorization using JWT.
 - **Content Management**: CRUD operations for movies, shows, and categories.
