@@ -1,25 +1,20 @@
 #!/bin/bash
 
-# Navigate to the repository directory (if not already there)
-cd "$(dirname "$0")"
+echo "Updating all submodules..."
 
-# Pull the latest changes from the main repository
-echo "Pulling latest changes from Netflix-Fullstack..."
-git pull origin main
-
-# Update submodules
-echo "Updating submodules..."
-git submodule update --init --recursive
-
-# Pull latest changes for each submodule
-echo "Pulling latest changes for Netflix-Frontend..."
-cd frontend
-git pull origin main
+# Navigate to frontend submodule, pull latest changes
+echo "Updating frontend..."
+cd frontend || { echo "Frontend directory not found!"; exit 1; }
+git pull origin main || { echo "Failed to update frontend!"; exit 1; }
 cd ..
 
-echo "Pulling latest changes for Netflix-Backend..."
-cd backend
-git pull origin main
+# Navigate to backend submodule, pull latest changes
+echo "Updating backend..."
+cd backend || { echo "Backend directory not found!"; exit 1; }
+git pull origin main || { echo "Failed to update backend!"; exit 1; }
 cd ..
 
-echo "All submodules updated successfully!"
+# Update git submodules in case any new submodules were added
+git submodule update --remote --merge
+
+echo "Submodules updated successfully!"
