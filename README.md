@@ -6,7 +6,7 @@ A full-stack Netflix clone built with modern technologies, including **React.js*
 
 ## Features 🚀
 
-### [Frontend (React.js)](https://github.com/AliAlYaman/Netflix-Frontend.git)
+### Frontend (React.js) [Repo](https://github.com/AliAlYaman/Netflix-Frontend.git)
 - **User Authentication**: Login, signup, and user profile management.
 - **Browse Page**: Dynamic movie/show browsing with categories (e.g., Trending, Top Rated, Action).
 - **Video Player**: Integrated video player for streaming content.
@@ -15,7 +15,7 @@ A full-stack Netflix clone built with modern technologies, including **React.js*
 - **Custom Recommendations**: AI-driven personalized recommendations based on user behavior.
 - **Tailwind CSS**: Utility-first CSS framework for styling.
 
-### [Backend (Laravel)](https://github.com/AliAlYaman/Netflix-Backend.git)
+### Backend (Laravel) [Repo](https://github.com/AliAlYaman/Netflix-Backend.git)
 - **RESTful API**: Robust API for frontend-backend communication.
 - **User Management**: Secure authentication and authorization using JWT.
 - **Content Management**: CRUD operations for movies, shows, and categories.
